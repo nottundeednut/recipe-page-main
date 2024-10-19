@@ -94,39 +94,54 @@ textarea:not([rows]) {
 /* MY RULES */
 
 body {
-    max-width: 375px;
-    font-family: "Outfit", sans-serif;
-    margin: 0 auto;
-    background-color: hsl(0, 0%, 100%);
-    color: hsl(30, 10%, 34%);
+  max-width: 375px;
+  font-family: "Outfit", sans-serif;
+  margin: 0 auto;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(30, 10%, 34%);
 }
 
 h1 {
-    font-family: "Young Serif", serif;
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 36px 32px;
-    color:hsl(24, 5%, 18%);
+  font-family: "Young Serif", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 36px 32px;
+  color: hsl(24, 5%, 18%);
 }
 
 header p {
-    margin: 0 32px 36px;
+  margin: 0 32px 36px;
 }
 
 .preptime {
-    background-color: hsl(30, 54%, 90%);
-    margin: 0 36px;
-    padding: 18px;
-    border-radius: 10px;
+  background-color: hsl(30, 54%, 90%);
+  margin: 0 36px;
+  padding: 18px;
+  border-radius: 10px;
 }
 .preptime h2 {
-    color: hsl(332, 51%, 32%);
-    font-size: 1.25rem;
-    font-weight: 600;
+  color: hsl(332, 51%, 32%);
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 .preptime li::marker {
-    color: hsl(332, 51%, 32%);
+  color: hsl(332, 51%, 32%);
 }
-.bold {
-    font-weight: 600;
+.preptime .bold {
+  font-weight: 700;
+}
+
+section h3 {
+  color: hsl(14, 45%, 36%);
+  font-family: "Young Serif", serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin: 32px 32px;
+}
+.In {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  margin: 32px 32px;
+}
+.In li:last-child {
+    margin-bottom: 32px;
 }
