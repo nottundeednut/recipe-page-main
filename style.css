@@ -109,7 +109,7 @@ h1 {
   color: hsl(24, 5%, 18%);
 }
 
-header p {
+p {
   margin: 0 32px 36px;
 }
 
@@ -127,7 +127,7 @@ header p {
 .preptime li::marker {
   color: hsl(332, 51%, 32%);
 }
-.preptime .bold {
+.preptime .bold, .In .bold {
   font-weight: 700;
 }
 
@@ -143,5 +143,23 @@ section h3 {
   margin: 32px 32px;
 }
 .In li:last-child {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
+}
+.In li::marker {
+    color:  hsl(14, 45%, 36%);
+}
+
+.cal {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  margin-bottom: 0;
+  padding: 16px 0;
+}
+.cal:last-child {
+    border-bottom: none;
+}
+.cal span {
+    color:  hsl(14, 45%, 36%);
+    font-weight: 600;
 }
