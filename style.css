@@ -94,10 +94,13 @@ textarea:not([rows]) {
 /* MY RULES */
 
 body {
-  max-width: 375px;
-  font-family: "Outfit", sans-serif;
-  margin: 0 auto;
+    font-family: "Outfit", sans-serif;
+}
+.container {
   background-color: hsl(0, 0%, 100%);
+  max-width: 100%;
+  width: 375px;
+  margin: 0 auto;
   color: hsl(30, 10%, 34%);
 }
 
@@ -127,7 +130,8 @@ p {
 .preptime li::marker {
   color: hsl(332, 51%, 32%);
 }
-.preptime .bold, .In .bold {
+.preptime .bold,
+.In .bold {
   font-weight: 700;
 }
 
@@ -146,7 +150,7 @@ section h3 {
   margin-bottom: 32px;
 }
 .In li::marker {
-    color:  hsl(14, 45%, 36%);
+  color: hsl(14, 45%, 36%);
 }
 
 .cal {
@@ -157,9 +161,30 @@ section h3 {
   padding: 16px 0;
 }
 .cal:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 .cal span {
-    color:  hsl(14, 45%, 36%);
-    font-weight: 600;
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+
+/* desktop */
+
+@media (min-width: 375px) {
+  body {
+    background-color: hsl(30, 54%, 90%);
+  }
+  .container {
+    max-width: 700px;
+    border-radius: 10px;
+    margin: 48px auto;
+    padding: 24px 24px;
+  }
+  img {
+    border-radius: 10px;
+  }
+  h1, p, .preptime, section h3, .In {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
