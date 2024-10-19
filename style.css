@@ -95,6 +95,7 @@ textarea:not([rows]) {
 
 body {
     font-family: "Outfit", sans-serif;
+    line-height: 2;
 }
 .container {
   background-color: hsl(0, 0%, 100%);
@@ -187,5 +188,8 @@ section h3 {
   h1, p, .preptime, section h3, .In {
     margin-left: 0;
     margin-right: 0;
+  }
+  .preptime {
+    background-color: hsl(0, 0%, 100%);
   }
 }
